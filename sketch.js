@@ -20,6 +20,9 @@ createCanvas(400,400);
 
 function draw() {
   background("blue");
+  if (sea.x < 0) {
+     sea.x = 400; } 
+  sea.velocityX = -2;
   drawSprites();
  
 }
